@@ -7,6 +7,13 @@
 
 $(document).ready(function () {
 
+    $(function() {
+        // Peer object
+        const peer = new Peer({
+            key:   window.__SKYWAY_KEY__,
+            debug: 3,
+        });
+
     //APIキー（6165842a-5c0d-11e3-b514-75d3313b9d05はlocalhostのみ利用可能）
     var APIKEY = '7fbe7dfa-d652-42d8-8252-a68e466ef3a6';
 
