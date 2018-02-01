@@ -8,7 +8,7 @@
 $(document).ready(function () {
 
     //APIキー（6165842a-5c0d-11e3-b514-75d3313b9d05はlocalhostのみ利用可能）
-    var APIKEY = 'eeda1ce4-698b-41a5-a9cd-026bea14a5ea';
+    var APIKEY = '7fbe7dfa-d652-42d8-8252-a68e466ef3a6';
 
     //ユーザーリスト
     var userList = [];
@@ -32,6 +32,8 @@ $(document).ready(function () {
     peer.on('open', function () {
         $('#my-id').text(peer.id);
     });
+
+    
 
     // 相手からのコールを受信したら自身のメディアストリームをセットして返答
     peer.on('call', function (call) {
